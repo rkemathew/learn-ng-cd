@@ -8,6 +8,7 @@ import { Component, DoCheck, OnInit, AfterContentInit, AfterContentChecked, Afte
 export class AppCommonComponent implements OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnChanges {
   title = 'app';
   isDisplayOutText = false;
+  isFired = false;
 
   constructor(
     protected cd: ChangeDetectorRef

@@ -2,7 +2,11 @@
   <div class="title-button">
     <h1>App Component</h1>
     <button (click)="buttonClicked()">App Component Button</button>
-  </div>
+<!--
+        <div class="not-fired" *ngIf="!isFired"><i class="glyphicon glyphicon-fire"></i></div>
+        <div class="fired" *ngIf="isFired"><i class="glyphicon glyphicon-fire"></i></div>
+-->
+</div>
   <div class="child">
     <app-a-comp></app-a-comp>
     <app-b-comp></app-b-comp>
