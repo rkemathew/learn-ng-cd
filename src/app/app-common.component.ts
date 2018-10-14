@@ -1,4 +1,4 @@
-import { Component, DoCheck, OnInit, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnChanges } from '@angular/core';
+import { Component, DoCheck, OnInit, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnChanges, ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +8,10 @@ import { Component, DoCheck, OnInit, AfterContentInit, AfterContentChecked, Afte
 export class AppCommonComponent implements OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnChanges {
   title = 'app';
   isDisplayOutText = false;
+
+  constructor(
+    protected cd: ChangeDetectorRef
+  ) {}
 
   ngOnInit() {
     this.outText(this.title + ' ngOnInit fired');

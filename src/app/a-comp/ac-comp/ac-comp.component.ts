@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectorRef } from '@angular/core';
 import { AppCommonComponent } from '../../app-common.component';
 
 @Component({

@@ -1,13 +1,14 @@
 .container {
-    border: solid 2px purple;
-    padding: 10px;
-    width: 360px;
+    border: solid 2px blue;
+    padding: 5px;
+    margin-top: 10px;
+    width: 450px;
 }
 
 .title-button {
     border: solid 1px black;
     padding: 10px;
-    width: 340px;
+    width: 428px;
 }
 
 .child {
